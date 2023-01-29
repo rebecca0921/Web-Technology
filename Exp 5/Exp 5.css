@@ -1,0 +1,40 @@
+*{
+    margin:0px;
+}
+.header {
+    color: white;
+    line-height: 70px;
+    text-align: center;
+    background-color: red;
+    font-size: 50px;
+    top: 0;
+}
+.cake{
+    width: 24%;
+    display:inline-block;
+    margin-top: 0%;
+}
+img{
+    height: 200px;
+    width: 200px;
+}
+h2{
+    color: blue;
+}
+button{
+    width: 103%;
+    background-color: #3bd2da;
+    color: white;
+    padding: 14px 20px;
+    margin: 5px auto;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input{
+    width: 100%;
+    color: red;
+}
+label{
+    color: blue;
+}

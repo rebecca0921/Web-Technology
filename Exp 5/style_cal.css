@@ -1,0 +1,32 @@
+.cal{
+    color: blue;
+    position: absolute;
+    border: 3px solid lightblue;
+    margin: 25%;
+    border-radius: 13px;
+    padding: 20px 60px;
+}
+
+.title{
+    text-align: center;
+    margin: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+label{
+    display: block;
+    padding: 2px 0px;
+    font-size: 18px;
+}
+
+.res{
+    font-size: 17px;
+    color: white;
+    background-color: skyblue;
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0px;
+    display: block;
+    border-radius: 4px;
+}
