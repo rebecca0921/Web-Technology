@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Cake Shop</title>
+    <link rel="stylesheet" href="style_cake.css">
+    <script>
+      function myfun() {
+        var total = 0;
+        total+=parseInt(document.getElementById("i1").value)*450;
+        total+=parseInt(document.getElementById("i2").value)*500;
+        total+=parseInt(document.getElementById("i3").value)*750;
+        total+=parseInt(document.getElementById("i4").value)*550;
+        document.getElementById("total").value = '$'+total;
+      }
+    </script>
+  </head>
+  <body>
+    <div class="header">Cake Shop</div>
+    <div class="menu">
+      <div class="item"><img src="src/1.webp" alt=""><div class="caption">Chocolate : $450</div></div>
+      <div class="item"><img src="src/2.webp" alt=""><div class="caption">Butterscotch : $500</div></div>
+      <div class="item"><img src="src/3.webp" alt=""><div class="caption">Half ChocoVanilla : $750</div></div>
+      <div class="item"><img src="src/4.webp" alt=""><div class="caption">Kitkat : $550</div></div>
+    </div>
+    <div class="header">Order</div>
+    <div class="order">
+      <div>
+        <label for="c">Chocolate</label>
+        <input id="i1" type="text" name="c" size="95" value=0>
+      </div>
+      <div>
+        <label for="b">Butterscotch</label>
+        <input id="i2" type="text" name="b" size="95" value=0>
+      </div>
+      <div>
+        <label for="cv">ChocoVanilla</label>
+        <input id="i3" type="text" name="cv" size="95" value=0>
+      </div>
+      <div>
+        <label for="k">Kitkat</label>
+        <input id="i4" type="text" name="k" size="95" value=0>
+      </div>
+      <input type="button" value="Place Order" onclick="myfun()">
+      <div class="total">
+        <label for="total">Total : </label>
+        <input type="text" name="total" id="total" size="10" style="border: none; background-color:rgb(252, 200, 200);" value="$0">
+      </div>
+    </div>
+  </body>
+</html>

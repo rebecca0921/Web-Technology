@@ -1,0 +1,79 @@
+body{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: rgb(255, 252, 217);
+}
+
+.header{  
+    display: block;
+    background-color: rgb(255, 207, 207);
+    font-size: 24px;
+    font-weight: bolder;
+    padding: 10px 0px;
+    margin: 10px 0px;
+}
+
+.menu{
+    position: relative;
+    display: block;
+    background-color: rgb(255, 232, 201);
+    padding: 10px;
+}
+
+.item{
+    width: 24%;
+    display: inline-block;
+    border-right: 1px solid brown;
+    border-left: 1px solid brown;
+}
+
+.caption{
+    font-weight: bold;
+    padding: 10px 5px;
+    width: 50%;
+    margin: auto;
+    background-color: rgb(238, 199, 140);
+    border-radius: 10px;
+}
+
+.order{
+    margin:  0px 470px;
+    padding: 10px;
+    background-color: rgb(252, 200, 200);
+    border-radius: 15px;
+}
+
+label{
+    margin-top: 10px;
+    display: block;
+    padding: 5px;
+    text-align: left;
+    font-weight: bold;
+}
+
+input[type="button"]{
+    margin: 10px;
+    padding: 10px;
+    background-color: brown;
+    border: none;
+    border-radius: 5px;
+    color: rgb(255, 249, 239);
+    font-weight: bolder;
+}
+
+input[type="button"]:hover{
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(219, 219, 219);
+    border: none;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+}
+.total label{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    display: inline-block;
+}
