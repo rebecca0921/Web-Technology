@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="Exp 6.js"></script>
+    <style>
+        div{
+            width:30px;
+            height:200px;
+            top: 50px;
+        }
+        #box{
+            width:30px;
+            height:150px;
+            background-color: blue;
+            margin-left:1200px;
+        }
+       
+    </style>
+
+</head>
+<body onload="init()">
+    <div id="car" style="width:100px; height:80px">
+        <img src="car.png" alt="car" width="300" height="170"><br><br>
+    </div>
+    <div id="box"></div>
+    <br><br><br><br>
+    <br><br>
+    <button style="border-color: green;background-color: green;color:white ;width:80px; height:50px" onclick="move()">Start</button>
+    <button style="border-color: red;background-color: red;color:white ;width:80px; height:50px" onclick="halt()">Stop</button>
+    <button style="border-color: blue;background-color: blue;color:white ;width:80px; height:50px" onclick="reset()">Reset</button>
+    <div id="dang">
+
+    </div>
+</body>
+</html>
