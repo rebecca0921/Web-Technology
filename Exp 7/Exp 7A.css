@@ -1,0 +1,53 @@
+body{
+    margin: 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(250, 250, 250);
+}
+
+h1{
+    background-color: rgb(56, 56, 240);
+    color: antiquewhite;
+    text-align: center;
+    padding: 10px;
+}
+
+h2{
+    text-align: center;
+    color: rgb(179, 82, 13);
+}
+
+h3{
+    text-align: center;
+}
+
+label{
+    font-size: large;
+    font-weight: bolder;
+    padding:10px;
+}
+
+input[type="number"]{
+    border: 0px;
+    height: 24px;
+    border-radius: 3px;
+}
+
+input[type="button"]{
+    margin: 10px 40%;
+    border: 1px solid brown;
+    border-radius: 5px;
+    padding: 5px 20px;
+    width: 20%;
+    background-color: rgb(255, 171, 146);
+    font-weight: bolder;
+
+}
+
+#cal{
+text-align: center;
+}
+#box{
+    margin: auto 10%;
+    background-color: bisque;
+    padding: 10px 20px;
+}

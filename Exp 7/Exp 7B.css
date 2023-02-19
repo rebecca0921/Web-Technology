@@ -1,0 +1,44 @@
+body{
+    font-family:Comic Sans MS;
+    margin-top: 50px;
+}
+
+h3{
+    display: inline-block;
+    color: rgb(0, 0, 0);
+}
+#cont{
+    height: 200px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 10px;
+    
+}
+
+#style{
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 10px;
+    background-color: rgb(183, 240, 240);
+    border: 2px dotted rgb(0, 0, 0);
+    border-radius: 15px;
+}
+
+.in{
+    margin: auto;
+    margin-top: -10px;
+    width: 90%;
+    text-align: center;
+
+}
+
+input[type="button"]{
+    margin-left: 10px;
+    background-color: rgb(236, 255, 248);
+    border-radius: 5px;
+    padding: 3px 10px;
+    font-size: medium;
+    font-weight: bold;
+}

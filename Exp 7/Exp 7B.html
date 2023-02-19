@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>DEMO</title>
+        <link rel="stylesheet" href="Exp 7B.css">
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#bt1").change(function(){
+                    $("#style").css("background-color", $("#bt1").val());
+                });
+                $("#bt3").click(function(){
+                    $("#style").show();
+                });
+                $("#bt4").click(function(){
+                    $("#style").hide();
+                });
+                $("#bt5").click(function(){
+                    $("#style").toggle();
+                });
+                $("#bt6").click(function(){
+                    $("#style").fadeIn(1000);
+                });
+                $("#bt7").click(function(){
+                    $("#style").fadeOut(1000);
+                });
+                $("#bt8").click(function(){
+                    $("#style").fadeToggle(1000);
+                });
+                $("#bt9").click(function(){
+                    $("#style").slideUp(1000);
+                });
+                $("#bt10").click(function(){
+                    $("#style").slideDown(1000);
+                });
+                $("#bt11").click(function(){
+                    $("#style").slideToggle(1000);
+                });
+                $("#bt12").click(function(){
+                    $("#style").animate({height:"0px", width:"0px"},1000);
+                });
+            });
+
+
+
+        </script>
+    </head>
+    <body>
+        <div id="cont"><div id="style"></div>
+        <div class="in">
+            <h3>Manipulate CSS Styles using JQuery :</h3>
+            <input type="color"  id="bt1">
+            <!-- <input type="button" value="Blue" id="bt2"> -->
+        </div>
+        <div class="in">
+            <h3>Show, Hide and Toggle : </h3>
+            <input type="button" value="Show" id="bt3">
+            <input type="button" value="Hide" id="bt4">
+            <input type="button" value="Toggle" id="bt5">
+        </div>
+        <div class="in">
+            <h3>FadeIn, FadeOut and Fade-Toggle : </h3>
+            <input type="button" value="FadeIn" id="bt6">
+            <input type="button" value="FadeOut" id="bt7">
+            <input type="button" value="Fade-Toggle" id="bt8">
+        </div>
+        <div class="in">
+            <h3>SlideUp, SlideDown and Slide-Toggle : </h3>
+            <input type="button" value="SlideUp" id="bt9">
+            <input type="button" value="SlideDown" id="bt10">
+            <input type="button" value="Slide-Toggle" id="bt11">
+        </div>
+        <input type="button" value="Animate" style="margin: 0px 50%; background-color: rgb(233, 220, 204); font-weight: bolder;" id="bt12">
+         
+        
+    </body>
+</html>
