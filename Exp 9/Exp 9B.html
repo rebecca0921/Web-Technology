@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+<title>Routing</title>
+</head>
+<body ng-app="myapp">
+<h1>Angular JS Routing</h1>
+<a href="#!pd">Personal Details</a>
+<a href="#!ad">Academic Details</a>
+<a href="#!pro">Project Details</a>
+<a href="#!login">Login</a>
+<a href="#!signup">Sign Up</a>
+<div ng-view></div>
+<script>
+    const app = angular.module("myapp", ["ngRoute"]);
+    app.config(function($routeProvider){
+        $routeProvider
+        .when('/pd',{
+            template: "<h2>Personal details</h2><br>Name: <input type='text' required><br><br>Age: <input type='number' required><br><br>Gender: <input type='radio' value='Male' required>Male <input type='radio' value='Female' required>Female<br><br>State: <select required><option value='TN'>TN</option><option value='MH'>MH</option></select><br><br> <button value='submit'>Submit</button>" 
+        })
+        .when('/ad',{
+            template: "<h2>Academic Details</h2><br> 10th% <input type='number' required><br><br>11th% <input type='number' required><br><br>12th% <input type='number' required><br><br> Btech CGPA: <input type='number' required><br><br> <button value='submit'>Submit</button>"
+        })
+        .when('/pro',{
+            template: "<h2>Projects/Internship Details</h2><br> Projects <textarea rows='6' cols='50' required></textarea><br><br>Internships <textarea rows='6' cols='50' required></textarea><br><br> <button value='submit'>Submit</button>" 
+        })
+        .when('/login',{
+            template: "<h2>Login</h2><br> Username <input type='text' required><br><br> Password <input type='password' required><br><br> <button value='submit'>Submit</button>"
+        })
+        .when('/signup',{
+            template: "<h2>Sign Up</h2> Email <input type='email' required><br><br> Username <input type='text' required><br><br> Password <input type='password' required><br><br> <button value='submit'>Submit</button>"
+        });
+    });
+</script>
+</body>
+</html>
