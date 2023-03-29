@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Sign up page</title>
+    </head>
+    <body>
+        <form action="/signup" method="POST" >
+            Name:<span style='color:red'>*</span> <input type="text" name="name" required><br><br>
+            Password<span style='color:red'>*</span> <input type="password" name="password" required><br><br>
+            Age<span style='color:red'>*</span> <input type="number" name="age" required><br><br>
+            Mobile number<span style='color:red'>*</span> <input type="text" name="mobileno" required><br><br>
+            Email<span style='color:red'>*</span> <input type="email" name="email" required><br><br>
+            Gender<span style='color:red'>*</span> 
+                <input type="radio" name="gender" value="Male" required>Male
+                <input type="radio" name="gender" value="Female" required>Female<br><br>
+            State<span style='color:red'>*</span> <select name="state" required>
+                <option value="Tamilnadu">Tamilnadu</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Kerala">Kerala</option>
+            </select> <br><br>
+            <button type="submit">Sign Up</button>
+    </form>
+    <div>
+        <a href = "/view">View all the students</a>
+    </div>
+    </body>
+    </html>
